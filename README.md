@@ -25,5 +25,22 @@ to run them.  The basic notion of the models is the encoder-decoder,
 but of course this can be broadened to things like the u-net.  The 
 generators are quite slow, so don't expect amazing performance, even
 on your GPU, since this is not as memory-bound a problem as many 
-training exercises.
+training exercises.  In order to be performant, the naive implementation 
+that I first wrote using `numpy` will need to be changed to using 
+native `tensorflow` routines through `keras`.
 
+The first experiment, [Noise Reduction](NoiseReduction.ipynb), 
+adds two types of noise to a curated signal.  Each sample feature
+has randomly generated properties, which include frequency and noise
+parameters.  The signal composition is single sinusoid with an integer
+number of cycles in the size of the sample.  The amplitude is a random
+variable as well.  Gaussian noise is added with random variance per
+waveform.  Combined with the fact that the sinusoid amplitude is 
+randomly selected, we have random selection of signal-to-noise ratio.  There
+is also random spurious noise added.  This noise is a single sample that 
+has a fixed amplitude and a 50% chance of being above (or below) the 
+sample.  This noise has a probability of occuring, so could be 
+considered a Poisson process.  The network is trained using mean squared
+error and an Adam optimizer.
+
+The second experiment...
