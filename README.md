@@ -43,4 +43,12 @@ sample.  This noise has a probability of occuring, so could be
 considered a Poisson process.  The network is trained using mean squared
 error and an Adam optimizer.
 
-The second experiment...
+The second experiment, [Signal Reconstruction](coming_soon.ipynb), takes
+an original signal and quantizes it in time. The reason for this is the 
+supposition that the sampling (and time domain quantizing) of the signal 
+emulates the process that is present when we record music digitally.  The idea
+being that we can train the network to perform the appropriate interpolation.  In
+this case, we are using mean-squared-error to drive the training.  The end 
+goal is, like in the case of Wadia and their converters, to be able to train
+the interpolation based on what cohorts of humans find to be more musical.  This
+is not a standard error metric, so there is clearly work to be done!
