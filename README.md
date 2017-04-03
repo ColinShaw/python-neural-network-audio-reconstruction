@@ -29,7 +29,7 @@ training exercises.  In order to be performant, the naive implementation
 that I first wrote using `numpy` will need to be changed to using 
 native `tensorflow` routines through `keras`.
 
-The first experiment, [Noise Reduction.ipynb](NoiseReduction.ipynb), 
+The first experiment, [NoiseReduction.ipynb](NoiseReduction.ipynb), 
 adds two types of noise to a curated signal.  Each sample feature
 has randomly generated properties, which include frequency and noise
 parameters.  The signal composition is single sinusoid with an integer
