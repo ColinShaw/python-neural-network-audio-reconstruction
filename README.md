@@ -43,4 +43,10 @@ sample.  This noise has a probability of occuring, so could be
 considered a Poisson process.  The network is trained using mean squared
 error and an Adam optimizer.
 
-The second experiment...
+The second experiment, [Inverse Quantization](InverseQuantization.ipynb), is similar to
+the Noise Reduction experiment except that instead of adding noise to 
+a target signal, it quantizes it in time.  That is to say, the feature
+signal is quantized in time and is a step approximation of the target 
+signal.  The goal of course is the same, to train the network to reproduce 
+the target signal when subjected to the quantized feature.  Again, the network
+is trained using mean squared error and an Adam optimizer.
