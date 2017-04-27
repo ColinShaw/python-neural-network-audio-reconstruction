@@ -50,3 +50,14 @@ signal is quantized in time and is a step approximation of the target
 signal.  The goal of course is the same, to train the network to reproduce 
 the target signal when subjected to the quantized feature.  Again, the network
 is trained using mean squared error and an Adam optimizer.
+
+
+
+### Future Plans
+
+What I want to do with this project is get to the point that I can train the 
+audio mappings so that they do something useful.  Also, there is the issue
+of how to frame sequential runs.  There is nothing providing any guarantee that
+the mechanism of mapping noisy or quanitized data to the underlying ground 
+truth data would abide any normal property related to continuity when applied 
+across frames.  This is a very concerning issue that still needs to be resolved.
