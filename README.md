@@ -61,3 +61,11 @@ of how to frame sequential runs.  There is nothing providing any guarantee that
 the mechanism of mapping noisy or quanitized data to the underlying ground 
 truth data would abide any normal property related to continuity when applied 
 across frames.  This is a very concerning issue that still needs to be resolved.
+
+
+### Related Work
+
+Kuleshov, Enam and Ermon published an article entitled "Audio Super Resolution
+using Neural Networks" after I started work on this that is very interesting.  Please
+find the article [here](/docs/KuleshovEnamErmon.pff).  They also have a repo 
+associated with this work that can be found [here](https://github.com/kuleshov/audio-super-res).
